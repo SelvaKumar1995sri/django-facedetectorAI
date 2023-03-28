@@ -1,0 +1,35 @@
+<html>  
+    <head>
+        <style>
+            .file_submit {
+            margin-right: 12px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: gold;
+            display: inline-block;
+            font-size: 25px;
+            color: #28a745;
+            border-color: #28a745;
+          }
+          h3 {
+            font-style: italic;
+            text-align: center;
+            font-size: 50px;
+            color: rgb(9, 240, 43);
+
+          }
+         
+          </style>
+    </head>
+    {% block content %}
+        <div class="content">
+            <body>
+                <h3  >Click "Open Cam" to open a web camera</h3>
+                <form class="grid" action="/" method="GET">
+                    <center><input name="q" type="submit" placeholder="Open cam" class="file_submit"></center> 
+
+                </form>
+            </body>
+        </div>
+    {% endblock content %}
+</html>
