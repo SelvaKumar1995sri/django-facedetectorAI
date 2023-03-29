@@ -26,8 +26,14 @@
             <body>
                 <h3  >Click "Open Cam" to open a web camera</h3>
                 <form class="grid" action="/" method="GET">
-                    <center><input name="q" type="submit" placeholder="Open cam" class="file_submit"></center> 
-
+                    <!-- <center><input name="q" type="submit" placeholder="Open cam" class="file_submit"></center>  -->
+                    <center><button id="exitBtn" name="q" class="file_submit" onclick="myFunction()">Try it</button></center>
+                    
+                        <script>
+                            function myFunction() {
+                            confirm("confirm to open webcam!");
+                            }
+                        </script> 
                 </form>
             </body>
         </div>
